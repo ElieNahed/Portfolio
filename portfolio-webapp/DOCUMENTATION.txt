@@ -1,0 +1,13 @@
+
+Project Details
+This project leverages modern web technologies, 
+including Vite for rapid development, React for crafting dynamic user interfaces, 
+TypeScript (TSX) for enhanced type safety, and Tailwind CSS alongside custom CSS for styling. 
+Additionally, the project incorporates the react-router-dom package for client-side routing, 
+facilitating seamless navigation between different pages within the application.
+
+In the project's structure, each page is encapsulated within its own component housed in the pages 
+folder. The components directory contains reusable components such as navigation buttons. However,
+ despite efforts, challenges persisted with responsive design and centering items within the layout. 
+ Despite employing Tailwind CSS's utility classes and adhering to 
+best practices for responsive web design, these issues remained unresolved. 
