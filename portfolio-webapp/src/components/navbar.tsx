@@ -3,6 +3,7 @@ import "../css/nav.css";
 import Animation from "./animation";
 const Navbar: React.FC = () => {
   const [activeLink, setActiveLink] = useState<string>("");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const checkActiveLink = () => {
@@ -28,12 +29,12 @@ const Navbar: React.FC = () => {
             <Animation text="Elie Nahed" />
           </span>
         </span>
-        <div className="menu">
+        <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <ul>
+        <ul className={menuOpen ? "open" : ""}>
           <li>
             <a href="/" className={activeLink === "/" ? "active" : ""}>
               Home
