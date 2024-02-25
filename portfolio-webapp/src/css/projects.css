@@ -1,0 +1,135 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  padding: 110px 40px;
+  justify-items: center; /* Center items horizontally */
+}
+  .card {
+    background-color: #424549;
+    border: 1px solid #ccc;
+    padding: 20px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    width: 100%;
+  
+    .pfp {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    li {
+      margin: 20px 30px;
+    }
+  
+    li > div {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+  
+    li > div::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 20%;
+      width: 50%;
+      height: 2px;
+      background-color: #7289DA;
+    }
+  }
+  .website-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .website-item {
+    position: relative;
+  }
+  
+  .website-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 0%;
+  }
+  
+  .website-item p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+  }
+
+.media-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+  
+  #robbie {
+    border-radius: 0%;
+    width: 300px;
+    height: 200px;
+  }
+
+  #robbie,
+  .card video {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .video-container {
+    video {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+.socials-qr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+#tt-qr, #yt-qr {
+    border-radius: 0%;
+    width: 200px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.fa-brands{
+    font-size: 30px;
+}
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns:1fr; /* Change to single column layout */
+    }
+  
+    .card {
+      /* Adjust styles for smaller screens */
+    }
+  }
+ 
+  
