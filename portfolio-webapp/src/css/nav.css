@@ -1,69 +1,75 @@
 nav {
-    height: 100px;
-    background-color: #0065b200;
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: calc((95% - var(--nav-width)) / 2); /* Responsively calculate left position */
-    width: var(--nav-width); /* Set the width using CSS variable */
-    padding: 0 20px;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    border-radius: 50px;
-    margin: 10px 50px;
-  
-  ul {
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    text-align: left;
-  }
-  
-  li {
-    padding: 10px 0; /* Adjust vertical padding */
-    margin: 10px; /* Keep horizontal margin */
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.5;
-  }
-  
-  li:first-child {
-    margin-left: -30px; /* Remove left padding for the first item (Home) */
-  }
-  
-  li:last-child {
-    padding-right: 0; /* Remove right padding for the last item (Contact Me) */
-  }
-  
-  li:hover {
-    text-decoration: underline;
-    text-decoration-style: dashed;
-    text-underline-offset: 5px;
-    text-decoration-color: #fff;
-    opacity: 1;
-  }
-  
-  a,
-  a:hover,
-  a:visited {
-    color: #fff;
-  }
-  
-  img {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-    z-index: 1;
-  }
+  height: 100px;
+  background-color: #0065b200;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: calc((95% - var(--nav-width)) / 2); /* Responsively calculate left position */
+  width: var(--nav-width); /* Set the width using CSS variable */
+  padding: 0 20px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  border-radius: 50px;
+  margin: 10px 50px;
+ 
+
+ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  text-align: left;
 }
-  
-  
-  /* Styling for active link */
-  nav ul li a.active {
-    color: #fff; /* Change the color of the active link */
-    text-decoration: underline; /* Underline the active link */
-    text-decoration-style: dashed;
-  }
+
+li {
+  padding: 10px 0; /* Adjust vertical padding */
+  margin: 10px; /* Keep horizontal margin */
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+}
+
+li:first-child {
+  margin-left: -30px; /* Remove left padding for the first item (Home) */
+}
+
+li:last-child {
+  padding-right: 0; /* Remove right padding for the last item (Contact Me) */
+}
+
+li:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 5px;
+  text-decoration-color: #fff;
+  opacity: 1;
+}
+
+a,
+a:hover,
+a:visited {
+  color: #fff;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  z-index: 1;
+}
+}
+
+
+/* Styling for active link */
+nav ul li a.active {
+  color: #fff; /* Change the color of the active link */
+  text-decoration: underline; /* Underline the active link */
+  text-decoration-style:wavy;
+}.animation {
+  position: fixed; /* Fixed positioning */
+  top: 20px; /* Adjust top distance from the top of the screen */
+  left: 20px; /* Adjust left distance from the left of the screen */
+  z-index: 1100; /* Ensure the animation is above other elements */
+}

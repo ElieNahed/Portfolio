@@ -1,5 +1,5 @@
 import React from "react";
-import Animation from "../components/animation";
+import DownloadCV from "../components/downloadCV";
 import "../App.css";
 
 const Home: React.FC = () => {
@@ -7,11 +7,13 @@ const Home: React.FC = () => {
     <div className="centering">
       <div className="container">
         <div className="content">
-          <Animation />
           <p>
-            Hello! My name is Antoine and I'm a web developer. I specialize in
-            building modern and responsive websites and web applications using
-            cutting-edge technologies.
+            As a computer science student with a passion for JavaScript, I am
+            always seeking new challenges and opportunities to grow. I have
+            experience developing dynamic web applications using JavaScript and
+            am currently expanding my skill set to include React.js. I am
+            dedicated to staying up-to-date with the latest technologies and
+            finding innovative solutions to complex problems.
           </p>
           <p>
             This portfolio showcases some of my projects and highlights my
@@ -20,10 +22,7 @@ const Home: React.FC = () => {
             on a project!
           </p>
           <p style={{ textAlign: "center" }}>
-            Let's get to know me &nbsp;
-            <a href="/about">
-              <i className="fa-solid fa-arrow-right"></i>
-            </a>
+            <DownloadCV />
           </p>
         </div>
       </div>

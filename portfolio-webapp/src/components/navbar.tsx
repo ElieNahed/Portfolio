@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../css/nav.css";
-
+import Animation from "./animation";
 const Navbar: React.FC = () => {
   const [activeLink, setActiveLink] = useState<string>("");
 
@@ -21,41 +21,49 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav>
-      <ul>
-        <li>
-          <a href="/" className={activeLink === "/" ? "active" : ""}>
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="/about" className={activeLink === "/about" ? "active" : ""}>
-            About
-          </a>
-        </li>
-        <li>
-          <a
-            href="/experience"
-            className={activeLink === "/experience" ? "active" : ""}
-          >
-            Experience
-          </a>
-        </li>
-        <li>
-          <a
-            href="/projects"
-            className={activeLink === "/projects" ? "active" : ""}
-          >
-            Projects
-          </a>
-        </li>
-        <li>
-          <a href="/contact" className={activeLink === "" ? "active" : ""}>
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div>
+      <nav>
+        <span className="animation">
+          <Animation />
+        </span>
+        <ul>
+          <li>
+            <a href="/" className={activeLink === "/" ? "active" : ""}>
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="/about"
+              className={activeLink === "/about" ? "active" : ""}
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="/experience"
+              className={activeLink === "/experience" ? "active" : ""}
+            >
+              Experience
+            </a>
+          </li>
+          <li>
+            <a
+              href="/projects"
+              className={activeLink === "/projects" ? "active" : ""}
+            >
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="/contact" className={activeLink === "" ? "active" : ""}>
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 };
 
