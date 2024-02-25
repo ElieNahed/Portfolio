@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
     <div>
       <nav>
         <span className="animation">
-          <Animation />
+          <Animation text="Elie Nahed" />
         </span>
         <ul>
           <li>
@@ -48,6 +48,15 @@ const Navbar: React.FC = () => {
               Experience
             </a>
           </li>
+          <li>
+            <a
+              href="/education"
+              className={activeLink === "/education" ? "active" : ""}
+            >
+              Education
+            </a>
+          </li>
+
           <li>
             <a
               href="/projects"

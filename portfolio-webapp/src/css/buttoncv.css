@@ -1,0 +1,32 @@
+.button-cv {
+    text-align: center;
+  }
+  
+  .button-cv button {
+    background-color: #0cc7cd;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid transparent; /* Initial border color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition on background color change */
+    animation: borderAnimation 3s infinite; /* Apply animation */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  .button-cv button:hover {
+    background-color: #09a7b7;
+  }
+  @keyframes borderAnimation {
+    0% {
+      border-color:blueviolet; /* Initial border color */
+    }
+    50% {
+      border-color: #0cc7cd; /* Color halfway through animation */
+    }
+    100% {
+      border-color: royalblue; /* Final border color */
+    }
+  }
+  

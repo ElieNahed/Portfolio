@@ -7,7 +7,8 @@ import Contact from "./pages/contact.tsx";
 import Projects from "./pages/projects.tsx";
 import Experience from "./pages/experience.tsx";
 import About from "./pages/about.tsx";
-
+import Education from "./pages/education.tsx";
+import "./globale.css";
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/education" element={<Education />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="*" element={<Contact />} />
         </Routes>

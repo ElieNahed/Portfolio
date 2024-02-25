@@ -1,15 +1,17 @@
 import React from "react";
+import "../css/buttoncv.css";
 
 const DownloadCV = () => {
+  const cvUrl = "src/assets/ElieNahed_CV.pdf";
+
   const downloadCV = () => {
-    const cvUrl = "src/assets/ElieNahed_CV.pdf";
     window.open(cvUrl, "_blank");
   };
 
   return (
-    <p style={{ textAlign: "center" }}>
+    <div className="button-cv">
       <button onClick={downloadCV}>Download My CV</button>
-    </p>
+    </div>
   );
 };
 

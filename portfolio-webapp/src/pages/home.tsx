@@ -1,12 +1,14 @@
 import React from "react";
 import DownloadCV from "../components/downloadCV";
 import "../App.css";
+import Animation from "../components/animation";
 
 const Home: React.FC = () => {
   return (
     <div className="centering">
       <div className="container">
         <div className="content">
+          <Animation text="I'm Software Developer " />
           <p>
             As a computer science student with a passion for JavaScript, I am
             always seeking new challenges and opportunities to grow. I have
